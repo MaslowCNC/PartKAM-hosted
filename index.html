@@ -1,21 +1,22 @@
 <!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+    <head>
+        <title>This is the title of the webpage!</title>
+    </head>
+    <body>
+        <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+        <div id="container"></div> <!-- Add this line -->
+    </body>
 </html>
 <script>
-    window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer = window.RufflePlayer || {};
 
-    window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = window.RufflePlayer.newest();
-        let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("partkam.swf");
-    });
+        window.addEventListener("DOMContentLoaded", () => {
+                let ruffle = window.RufflePlayer.newest();
+                let player = ruffle.createPlayer();
+                let container = document.getElementById("container");
+                container.appendChild(player);
+                player.load("partkam.swf");
+        });
 </script>
 <script src="ruffle.js"></script>
